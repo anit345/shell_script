@@ -27,7 +27,7 @@ do
         rm $file_name
         echo "removed the file $file_name"
         #creating hardlink of the duplicate file
-	if [ $temp == $file_no ]
+	if [ $temp -eq $file_no ]
           ln $src_file $file_name
           echo "created the hard link for the file $file_name"
 	fi 
